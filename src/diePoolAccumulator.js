@@ -1,4 +1,4 @@
-function accumulateDieRolls(dieArray, rand) {
+function accumulateDieRolls(dieArray) {
     var result = new {};
     result[DIE_SUCCESS_RESULT] = 0;
     result[DIE_TRIUMPH_RESULT] = 0;
@@ -8,13 +8,10 @@ function accumulateDieRolls(dieArray, rand) {
     result[DIE_THREAT_RESULT] = 0;
 
     $.each(dieArray, function(idx, obj) {
-        $.each(obj(rand), function(idx, obj) {
+        $.each(obj.Roll(), function(idx, obj) {
             result[obj] += 1;
         });
     });
 
     return result;
 }
-//successes + triumphs - failures - despairs = pass sum
-//advantages - threats = side effect sum
-//count both triumphs and despairs = triumph and despair sums
