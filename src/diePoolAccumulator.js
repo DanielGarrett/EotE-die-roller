@@ -1,5 +1,5 @@
 function accumulateDieRolls(dieArray) {
-    var result = new {};
+    var result = {};
     result[DIE_SUCCESS_RESULT] = 0;
     result[DIE_TRIUMPH_RESULT] = 0;
     result[DIE_ADVANTAGE_RESULT] = 0;
