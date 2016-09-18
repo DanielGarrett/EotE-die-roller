@@ -6,6 +6,7 @@ var diceSelectionViewModel = function() {
     self.DifficultyDiceCount = ko.observable(0);
     self.ChallengeDiceCount = ko.observable(0);
     self.SetbackDiceCount = ko.observable(0);
+
 };
 
 (function(){
@@ -17,7 +18,7 @@ var diceSelectionViewModel = function() {
                 value(buttonValue);
             });
         },
-        update: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
+        update: function(element, valueAccessor) {
             var value = valueAccessor();
             var valueUnwrapped = ko.unwrap(value);
             var buttonValue = parseInt($(element).text());
