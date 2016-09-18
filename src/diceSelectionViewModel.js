@@ -7,12 +7,12 @@ var diceSelectionViewModel = function() {
     self.ChallengeDiceCount = ko.observable(0);
     self.SetbackDiceCount = ko.observable(0);
     
-    var abilityDie = new diceViewModel('http://game2.ca/eote/abilitybg.png', rollAbilityDie);
-    var proficiencyDie = new diceViewModel('http://game2.ca/eote/proficiencybg.png', rollProficiencyDie);
-    var boostDie = new diceViewModel('http://game2.ca/eote/boostbg.png', rollBoostDie);
-    var difficultyDie = new diceViewModel('http://game2.ca/eote/difficultybg.png', rollDifficultyDie);
-    var challengeDie = new diceViewModel('http://game2.ca/eote/challengebg.png', rollChallengeDie);
-    var setbackDie = new diceViewModel('http://game2.ca/eote/setbackbg.png', rollSetbackDie);
+    var abilityDie = new diceViewModel('ability', rollAbilityDie);
+    var proficiencyDie = new diceViewModel('proficiency', rollProficiencyDie);
+    var boostDie = new diceViewModel('boost', rollBoostDie);
+    var difficultyDie = new diceViewModel('difficulty', rollDifficultyDie);
+    var challengeDie = new diceViewModel('challenge', rollChallengeDie);
+    var setbackDie = new diceViewModel('setback', rollSetbackDie);
 
     self.DicePool = ko.computed(function() {
         var diceArray = [];
@@ -39,9 +39,9 @@ var diceSelectionViewModel = function() {
 
 };
 
-var diceViewModel = function(url, rollFunction) {
+var diceViewModel = function(spanClass, rollFunction) {
     var self = this;
-    self.ImageUrl = url;
+    self.SpanClass = spanClass;
     self.Roll = rollFunction;
 };
 

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: eoteSymbol;
+    src: url(EotE_Symbol-Regular_v1.otf);
+}
+
+span.ability {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: green;
+}
+span.ability::before {
+    content: "d";
+}
+
+span.proficiency {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: gold;
+}
+span.proficiency::before {
+    content: "c";
+}
+
+span.boost {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: skyblue;
+}
+span.boost::before {
+    content: "b";
+}
+
+span.difficulty {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: #453399;
+}
+span.difficulty::before {
+    content: "d";
+}
+
+span.challenge {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: #f61804;
+}
+span.challenge::before {
+    content: "c";
+}
+
+span.setback {
+    font-family: eoteSymbol;
+    font-size: 64px;
+    color: black;
+}
+span.setback::before {
+    content: "b";
+}
