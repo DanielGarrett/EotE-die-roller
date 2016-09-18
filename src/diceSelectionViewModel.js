@@ -7,12 +7,12 @@ var diceSelectionViewModel = function() {
     self.ChallengeDiceCount = ko.observable(0);
     self.SetbackDiceCount = ko.observable(0);
     
-    var abilityDie = new diceViewModel('ability', rollAbilityDie);
-    var proficiencyDie = new diceViewModel('proficiency', rollProficiencyDie);
-    var boostDie = new diceViewModel('boost', rollBoostDie);
-    var difficultyDie = new diceViewModel('difficulty', rollDifficultyDie);
-    var challengeDie = new diceViewModel('challenge', rollChallengeDie);
-    var setbackDie = new diceViewModel('setback', rollSetbackDie);
+    var abilityDie = new diceViewModel('symbol symbol-ability', rollAbilityDie);
+    var proficiencyDie = new diceViewModel('symbol symbol-proficiency', rollProficiencyDie);
+    var boostDie = new diceViewModel('symbol symbol-boost', rollBoostDie);
+    var difficultyDie = new diceViewModel('symbol symbol-difficulty', rollDifficultyDie);
+    var challengeDie = new diceViewModel('symbol symbol-challenge', rollChallengeDie);
+    var setbackDie = new diceViewModel('symbol symbol-setback', rollSetbackDie);
 
     self.DicePool = ko.computed(function() {
         var diceArray = [];
@@ -42,7 +42,7 @@ var diceSelectionViewModel = function() {
 var diceViewModel = function(spanClass, rollFunction) {
     var self = this;
     self.SpanClass = spanClass;
-    self.Roll = rollFunction;
+    self.Role  = rollFunction;
 };
 
 (function(){

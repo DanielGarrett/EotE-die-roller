@@ -2,57 +2,62 @@
     font-family: eoteSymbol;
     src: url(EotE_Symbol-Regular_v1.otf);
 }
-
-span.ability {
-    font-family: eoteSymbol;
-    font-size: 64px;
-    color: green;
-}
-span.ability::before {
-    content: "d";
-}
-
-span.proficiency {
-    font-family: eoteSymbol;
-    font-size: 64px;
-    color: gold;
-}
-span.proficiency::before {
-    content: "c";
-}
-
-span.boost {
-    font-family: eoteSymbol;
-    font-size: 64px;
-    color: skyblue;
-}
-span.boost::before {
-    content: "b";
-}
-
-span.difficulty {
-    font-family: eoteSymbol;
-    font-size: 64px;
-    color: #453399;
-}
-span.difficulty::before {
-    content: "d";
-}
-
-span.challenge {
-    font-family: eoteSymbol;
-    font-size: 64px;
-    color: #f61804;
-}
-span.challenge::before {
-    content: "c";
-}
-
-span.setback {
+div.symbol {
+    float: left;
     font-family: eoteSymbol;
     font-size: 64px;
     color: black;
 }
-span.setback::before {
+div.symbol-ability::before {
+    color: green;
+    content: "d";
+    margin: auto 8px;
+}
+div.symbol-proficiency::before {
+    color: gold;
+    content: "c";
+    margin: auto 1.595px;
+}
+div.symbol-boost::before {
+    color: skyblue;
     content: "b";
+    margin: auto 8px;
+}
+div.symbol-difficulty::before {
+    color: #453399;
+    content: "d";
+    margin: auto 8px;
+}
+div.symbol-challenge::before {
+    color: #f61804;
+    content: "c";
+    margin: auto 1.595px;
+}
+div.symbol-setback::before {
+    content: "b";
+    margin: auto 8px;
+}
+div.symbol-success::before {
+    content: "s";
+    margin: auto 8px;
+}
+div.symbol-failure::before {
+    content: "f";
+    margin: auto 4.795px;
+}
+div.symbol-triumph::before {
+    content: "x";
+    margin: auto 8px;
+}
+div.symbol-despair::before {
+    content: "y";
+    margin: auto 4.795px;
+}
+div.symbol-advantage::before {
+    content: "a";
+    margin: auto 1.595px;
+}
+div.symbol-threat::before {
+    content: "t";
+    margin: auto 4.795px;
 }
