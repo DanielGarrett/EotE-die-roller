@@ -38,26 +38,32 @@ div.symbol-setback::before {
     margin: auto 8px;
 }
 div.symbol-success::before {
+    color: green;
     content: "s";
     margin: auto 8px;
 }
 div.symbol-failure::before {
+    color: #453399;
     content: "f";
     margin: auto 4.795px;
 }
 div.symbol-triumph::before {
+    color: gold;
     content: "x";
     margin: auto 8px;
 }
 div.symbol-despair::before {
+    color: #f61804;
     content: "y";
     margin: auto 4.795px;
 }
 div.symbol-advantage::before {
+    color: green;
     content: "a";
     margin: auto 1.595px;
 }
 div.symbol-threat::before {
+    color: #453399;
     content: "t";
     margin: auto 4.795px;
 }
