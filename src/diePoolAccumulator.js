@@ -15,3 +15,6 @@ function accumulateDieRolls(dieArray, rand) {
 
     return result;
 }
+//successes + triumphs - failures - despairs = pass sum
+//advantages - threats = side effect sum
+//count both triumphs and despairs = triumph and despair sums
